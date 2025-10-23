@@ -1,0 +1,145 @@
+/* ===========================
+   ESTILOS GENERALES
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4a90e2, #1a202c);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 1rem;
+}
+
+/* ===========================
+   ENCABEZADO
+=========================== */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ===========================
+   CONTENEDOR DE BÚSQUEDA
+=========================== */
+.search-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.search-box:hover {
+  transform: translateY(-3px);
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  color: #333;
+}
+
+.search-box input::placeholder {
+  color: #777;
+}
+
+.search-box button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.search-box button:hover {
+  background-color: #357acb;
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   RESULTADOS
+=========================== */
+.result-container {
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 1.5rem;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.result-container img {
+  margin-top: 1rem;
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.result-container h2 {
+  color: #ffe082;
+  margin-bottom: 0.8rem;
+}
+
+.result-container p {
+  margin: 0.4rem 0;
+  line-height: 1.5;
+  color: #f3f3f3;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .search-box {
+    padding: 1.2rem;
+  }
+
+  .search-box input {
+    font-size: 0.95rem;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+
+  .result-container {
+    padding: 1rem;
+  }
+}
