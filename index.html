@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buscador PWA de Cócteles</title>
+    <title>🍸 PWA de Cócteles</title>
+
+    <!-- Rutas relativas -->
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="manifest" href="./manifest.json" />
   </head>
+
   <body>
     <header>
-      <h1>🍹 Buscador de Cócteles PWA</h1>
+      <h1>🍹 Buscador de Cócteles</h1>
     </header>
+
     <main>
       <section class="search-box">
         <input
@@ -20,10 +24,13 @@
         />
         <button id="searchButton">Buscar</button>
       </section>
+
+      <!-- Aquí aparecerá la card -->
       <section id="result" class="result-container">
-        <p>Escribe un nombre de cóctel y presiona buscar para iniciar la prueba.</p>
+        <p>🔍 Escribe un nombre y presiona <strong>Buscar</strong></p>
       </section>
     </main>
+
     <script src="./main.js"></script>
     <script src="./scripts/app.js"></script>
   </body>
